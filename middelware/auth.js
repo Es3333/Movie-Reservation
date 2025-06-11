@@ -15,8 +15,8 @@ try {
 }
 }
 exports.isAdmin=async (req,res,next)=>{
-console.log(req.user.role )
-    if('admin' === 'admin'){
+
+    if('admin' === 'req.user.role'){
         next();
     }
    else{
